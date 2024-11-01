@@ -16,6 +16,10 @@ export default function Home() {
           <InfoBox>
             Explore our curated selection of Next.js starter kits designed to accelerate your development process.
           </InfoBox>
+          <InfoBox>
+            Our templates are designed to be fully customizable, allowing you
+            to tailor them to your specific needs.
+          </InfoBox>
         </PageHeader>
       </main>
       <Footer />
