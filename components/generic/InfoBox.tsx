@@ -5,7 +5,7 @@ interface InfoBoxProps {
 
 export default function InfoBox({ children }: InfoBoxProps) {
   return (
-    <div className="w-full max-w-5xl mx-auto px-8 py-12 rounded-lg shadow-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100">
+    <div className="w-full max-w-5xl mx-auto m-4 px-8 py-12 rounded-lg shadow-lg bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100">
       <p className="text-lg leading-relaxed">
         {children}
       </p>
