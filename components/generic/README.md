@@ -8,7 +8,7 @@ Generic components must be standalone and not use any project or other generic c
 
 ## List of generic components
 
-- [InfoBox](./InfoBox.tsx): A component that displays a box with information.
-- [PageHeader](./PageHeader.tsx): A component that displays a page header.
-- [CTAButton](./CTAButton.tsx): A reusable call-to-action button component.
-- [ThemeToggle](./ThemeToggle.tsx): A theme toggle component that allows users to toggle between light and dark themes.
+- [InfoBox](./InfoBox.tsx): box with centered text information.
+- [PageHeader](./PageHeader.tsx): title and subtitle for a page.
+- [CTAButton](./CTAButton.tsx): call-to-action button.
+- [ThemeToggle](./ThemeToggle.tsx): theme toggle button.

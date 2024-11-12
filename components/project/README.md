@@ -8,5 +8,5 @@ Additionally, project components can use [generic components](../generic/README.
 
 ## List of project components
 
-- [Header](./Header.tsx): A component that displays a header.
-- [Footer](./Footer.tsx): A component that displays a footer.
+- [Header](./Header.tsx): header area with navigation.
+- [Footer](./Footer.tsx): footer area with links and social media.

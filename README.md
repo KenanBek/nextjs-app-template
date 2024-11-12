@@ -2,6 +2,28 @@
 
 Next.js boilerplate and templates for web, SaaS, and portfolio websites.
 
+## Components
+
+Components are the building blocks of Next.js App Template. They are designed to be used in a variety of projects.
+
+### Current List of Components
+
+#### Generic
+
+- `InfoBox`: box with centered text information.
+- `PageHeader`: title and subtitle for a page.
+- `CTAButton`: call-to-action button.
+- `ThemeToggle`: theme toggle button.
+
+Learn more about [generic components](./components/generic/README.md).
+
+#### Project
+
+- `Header`: header area with navigation.
+- `Footer`: footer area with links and social media.
+
+Learn more about [project components](./components/project/README.md).
+
 ## Getting Started
 
 First, clone the repository:
