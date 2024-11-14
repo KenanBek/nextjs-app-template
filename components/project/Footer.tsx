@@ -6,7 +6,7 @@ interface FooterProps {
   companyName?: string;
 }
 
-export default function Footer({ companyName = appConfig.footer.companyName }: FooterProps) {
+export default function Footer({ companyName = appConfig.footer.title }: FooterProps) {
   return (
     <footer className="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -25,43 +25,25 @@ export default function Footer({ companyName = appConfig.footer.companyName }: F
 
           {/* Links container - pushed to the right */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 md:gap-16">
-            {/* Company links */}
-            <div>
-              <h3 className="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider mb-4">
-                Company
-              </h3>
-              <ul className="space-y-3">
-                {appConfig.footer.companyLinks.map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Resource links */}
-            <div>
-              <h3 className="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider mb-4">
-                Resources
-              </h3>
-              <ul className="space-y-3">
-                {appConfig.footer.resourceLinks.map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      href={link.href}
-                      className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {Object.entries(appConfig.footer.links).map(([section, links]) => (
+              <div key={section}>
+                <h3 className="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wider mb-4">
+                  {section.charAt(0).toUpperCase() + section.slice(1)}
+                </h3>
+                <ul className="space-y-3">
+                  {links.map((link) => (
+                    <li key={link.href}>
+                      <Link
+                        href={link.href}
+                        className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white text-sm"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
 

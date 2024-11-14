@@ -1,6 +1,6 @@
 # Project Components
 
-Project components are components that are specific to a particular project. They are designed to be used in a variety of projects.
+Components that use data from project's configuration.
 
 Primary difference between generic and project specific components is that **project specific components use data from project's configuration (title, description, links, etc).**
 

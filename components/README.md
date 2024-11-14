@@ -1,8 +1,8 @@
 # Components
 
-Components are the building blocks of the application. They are designed to be used in a variety of projects.
+This directory contains all the components used in the project.
 
 Components are divided into two categories:
 
-- [Generic](./generic/README.md): Generic components are components that are not specific to a particular project. They are designed to be used in a variety of projects.
-- [Project](./project/README.md): Project components are components that are specific to a particular project. They are designed to be used in a variety of projects.
+- [Generic](./generic/README.md): independent components that can be used in any project and in other project components.
+- [Project](./project/README.md): components that use data from project's configuration.

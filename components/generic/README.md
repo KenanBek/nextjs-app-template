@@ -1,6 +1,6 @@
 # Generic Components
 
-Generic components are components that are not specific to a particular project. They are designed to be used in a variety of projects.
+Reusable components that can be used in any project and in other project components.
 
 Primary difference between generic and project specific components is that **generic components do not use data from project's configuration (title, description, etc).**
 

@@ -1,4 +1,5 @@
 export interface AppConfig {
+  name: string;
   title: string;
   description: string;
   logo: {
@@ -12,15 +13,13 @@ export interface AppConfig {
     }>;
   };
   footer: {
-    companyName: string;
+    title: string;
     description: string;
-    companyLinks: Array<{
-      href: string;
-      label: string;
-    }>;
-    resourceLinks: Array<{
-      href: string;
-      label: string;
-    }>;
+    links: {
+      [section: string]: Array<{
+        href: string;
+        label: string;
+      }>;
+    };
   };
 }
