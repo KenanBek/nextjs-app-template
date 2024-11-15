@@ -13,6 +13,9 @@ const TOC_ITEMS = {
     { id: 'pageheader', label: 'PageHeader' },
     { id: 'ctabutton', label: 'CTAButton' },
     { id: 'themetoggle', label: 'ThemeToggle' },
+    { id: 'floatingnav', label: 'FloatingNav' },
+    { id: 'tableofcontents', label: 'TableOfContents' },
+    { id: 'scrollindicator', label: 'ScrollIndicator' },
   ],
   'Project Components': [
     { id: 'header', label: 'Header' },
@@ -101,6 +104,80 @@ export default function ComponentsPage() {
                 <ThemeToggle />
               </div>
               <CodeBlock code={`<ThemeToggle />`} />
+            </div>
+
+            {/* FloatingNav */}
+            <div id="floatingnav" className="mb-12 scroll-mt-16">
+              <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+                FloatingNav
+                <a href="#floatingnav" className="text-indigo-600 dark:text-indigo-400 text-sm">
+                  #
+                </a>
+              </h3>
+              <div className="mb-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm">
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  The FloatingNav component appears when scrolling down the page. See it in action by scrolling this page.
+                </p>
+              </div>
+              <CodeBlock
+                code={`<FloatingNav 
+  items={{
+    'Section 1': [
+      { id: 'item1', label: 'Item 1' },
+      { id: 'item2', label: 'Item 2' }
+    ],
+    'Section 2': [
+      { id: 'item3', label: 'Item 3' }
+    ]
+  }} 
+/>`}
+              />
+            </div>
+
+            {/* TableOfContents */}
+            <div id="tableofcontents" className="mb-12 scroll-mt-16">
+              <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+                TableOfContents
+                <a href="#tableofcontents" className="text-indigo-600 dark:text-indigo-400 text-sm">
+                  #
+                </a>
+              </h3>
+              <div className="mb-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm">
+                <TableOfContents
+                  items={{
+                    'Example Section': [
+                      { id: 'example1', label: 'Example Item 1' },
+                      { id: 'example2', label: 'Example Item 2' },
+                    ],
+                  }}
+                />
+              </div>
+              <CodeBlock
+                code={`<TableOfContents
+  items={{
+    'Example Section': [
+      { id: 'example1', label: 'Example Item 1' },
+      { id: 'example2', label: 'Example Item 2' }
+    ]
+  }}
+/>`}
+              />
+            </div>
+
+            {/* ScrollIndicator */}
+            <div id="scrollindicator" className="mb-12 scroll-mt-16">
+              <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+                ScrollIndicator
+                <a href="#scrollindicator" className="text-indigo-600 dark:text-indigo-400 text-sm">
+                  #
+                </a>
+              </h3>
+              <div className="mb-4 bg-white dark:bg-gray-800 p-4 rounded-lg shadow-sm">
+                <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  The ScrollIndicator component shows reading progress at the top of the page. See it in action as you scroll this page.
+                </p>
+              </div>
+              <CodeBlock code={`<ScrollIndicator />`} />
             </div>
           </section>
 
