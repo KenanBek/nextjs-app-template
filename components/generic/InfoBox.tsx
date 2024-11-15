@@ -1,3 +1,5 @@
+"use client";
+
 interface InfoBoxProps {
   children: React.ReactNode;
   className?: string;

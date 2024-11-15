@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import ThemeToggle from "@/components/generic/ThemeToggle";
 import appConfig from "@/config/app.config";

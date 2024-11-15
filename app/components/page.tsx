@@ -5,6 +5,7 @@ import ThemeToggle from "@/components/generic/ThemeToggle";
 import Header from "@/components/project/Header";
 import Footer from "@/components/project/Footer";
 import FloatingNav from "@/components/generic/FloatingNav";
+import TableOfContents from "@/components/generic/TableOfContents";
 
 const TOC_ITEMS = {
   'Generic Components': [
@@ -26,30 +27,8 @@ export default function ComponentsPage() {
         description="Explore our collection of reusable components with usage examples and source code."
       />
 
-      {/* Table of Contents */}
       <div className="max-w-5xl mx-auto px-4 py-8">
-        <div id="table-of-contents" className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6 mb-8">
-          <h2 className="text-xl font-bold mb-4">Table of Contents</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            {Object.entries(TOC_ITEMS).map(([section, items]) => (
-              <div key={section}>
-                <h3 className="font-semibold mb-2">{section}</h3>
-                <ul className="space-y-2">
-                  {items.map(({ id, label }) => (
-                    <li key={id}>
-                      <a
-                        href={`#${id}`}
-                        className="text-indigo-600 dark:text-indigo-400 hover:text-indigo-800 dark:hover:text-indigo-300"
-                      >
-                        {label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
+        <TableOfContents items={TOC_ITEMS} />
 
         {/* Generic Components Section */}
         <section className="mb-16">
@@ -167,7 +146,7 @@ export default function ComponentsPage() {
         </section>
       </div>
 
-      {/* Add the floating navigation */}
+      {/* Add the floating navigation when the page is scrolled down */}
       <FloatingNav items={TOC_ITEMS} />
     </div>
   );

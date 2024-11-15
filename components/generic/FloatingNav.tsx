@@ -84,4 +84,4 @@ export default function FloatingNav({ items }: FloatingNavProps) {
       )}
     </div>
   );
-} 
+}

@@ -12,3 +12,6 @@ Generic components must be standalone and not use any project or other generic c
 - [PageHeader](./PageHeader.tsx): title and subtitle for a page.
 - [CTAButton](./CTAButton.tsx): call-to-action button.
 - [ThemeToggle](./ThemeToggle.tsx): theme toggle button.
+- [CodeBlock](./CodeBlock.tsx): code block with copy button.
+- [FloatingNav](./FloatingNav.tsx): floating navigation.
+- [TableOfContents](./TableOfContents.tsx): table of contents.

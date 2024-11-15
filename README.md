@@ -1,6 +1,6 @@
-# Next.js App Boilerplate and Template
+# Next.js App Template
 
-Next.js boilerplate and template for web, SaaS, and portfolio websites.
+Next.js app template and boilerplate for SaaS, portfolio, landing page, and marketing websites.
 
 ## Components
 
@@ -19,7 +19,7 @@ Components are the building blocks of Next.js App Template. They are designed to
 - `ThemeToggle`: theme toggle button.
 - `CodeBlock`: code block with copy button.
 - `FloatingNav`: floating navigation.
-- `TableOfContents`: table of contents with sticky links.
+- `TableOfContents`: table of contents.
 - `ScrollToTopButton`: scroll to top button.
 - `ScrollIndicator`: scroll indicator.
 
@@ -72,7 +72,7 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 If you are a beginner, you can use one of my courses to start building with Next.js, Tailwind CSS, and TypeScript:
 
-- [Next.js, Tailwind CSS, and TypeScript](https://www.udemy.com/course/nextjs-tailwind-css-typescript/)
+- [Next.js, Tailwind CSS, and TypeScript](https://www.codervlogger.com/how-to-build-website-app-with-nextjs-tailwindcss-cursorai-for-beginners/)
 
 Additionally, take a look at the following resources to learn more about Next.js:
 

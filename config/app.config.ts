@@ -6,7 +6,7 @@ const appConfig: AppConfig = {
   description:
     "Jumpstart your Next.js projects with our collection of boilerplates and templates.",
   logo: {
-    text: "Logo",
+    text: "Next.js App Template",
     href: "/",
   },
   navigation: {

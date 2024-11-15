@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 
@@ -9,13 +11,13 @@ interface PageHeaderProps {
   children?: React.ReactNode;
 }
 
-const PageHeader: React.FC<PageHeaderProps> = ({
+export default function PageHeader({
   title,
   subTitle,
   subTitleLink,
   description,
   children
-}) => {
+}: PageHeaderProps) {
   return (
     <section className="w-full max-w-5xl mx-auto text-center px-8 py-8 lg:py-12">
       <header className="mb-10">
@@ -41,6 +43,4 @@ const PageHeader: React.FC<PageHeaderProps> = ({
       {children}
     </section>
   );
-};
-
-export default PageHeader;
+}
