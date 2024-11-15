@@ -10,17 +10,12 @@ const appConfig: AppConfig = {
     href: "/",
   },
   navigation: {
-    links: [
-      { href: "/products", label: "Products" },
-      { href: "/services", label: "Services" },
-      { href: "/about", label: "About" },
-      { href: "/contact", label: "Contact" },
-    ],
+    links: [{ href: "/components", label: "Components" }],
   },
   footer: {
-    title: "CoolWebsite",
+    title: "Next.js App Template",
     description:
-      "Building the future of web development with modern tools and frameworks.",
+      "Jumpstart your Next.js projects with our collection of boilerplates and templates.",
     links: {
       company: [
         { href: "/products", label: "Products" },

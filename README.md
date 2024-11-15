@@ -17,6 +17,11 @@ Components are the building blocks of Next.js App Template. They are designed to
 - `PageHeader`: title and subtitle for a page.
 - `CTAButton`: call-to-action button.
 - `ThemeToggle`: theme toggle button.
+- `CodeBlock`: code block with copy button.
+- `FloatingNav`: floating navigation.
+- `TableOfContents`: table of contents with sticky links.
+- `ScrollToTopButton`: scroll to top button.
+- `ScrollIndicator`: scroll indicator.
 
 Learn more about [generic components](./components/generic/README.md).
 
