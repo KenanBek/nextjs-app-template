@@ -17,17 +17,17 @@ const appConfig: AppConfig = {
     description:
       "Jumpstart your Next.js projects with our collection of boilerplates and templates.",
     links: {
-      company: [
-        { href: "/products", label: "Products" },
-        { href: "/services", label: "Services" },
-        { href: "/about", label: "About" },
-        { href: "/contact", label: "Contact" },
-      ],
       resources: [
-        { href: "/docs", label: "Documentation" },
-        { href: "/support", label: "Support" },
-        { href: "/terms", label: "Terms of Service" },
-        { href: "/privacy", label: "Privacy Policy" },
+        { href: "/components", label: "Components" },
+        { href: "https://github.com/KenanBek/nextjs-app-template", label: "GitHub" },
+        { href: "https://github.com/KenanBek/nextjs-app-template/issues", label: "Issues" },
+        { href: "https://github.com/KenanBek/nextjs-app-template/discussions", label: "Discussions" },
+      ],
+      documentation: [
+        { href: "https://nextjs.org/docs", label: "Next.js Docs" },
+        { href: "https://tailwindcss.com/docs", label: "Tailwind CSS" },
+        { href: "https://www.typescriptlang.org/docs", label: "TypeScript" },
+        { href: "https://react.dev", label: "React" },
       ],
     },
   },
