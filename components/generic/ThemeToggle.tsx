@@ -2,11 +2,29 @@
 
 import { useEffect, useState } from "react";
 
+// Create a custom event name
+const THEME_CHANGE_EVENT = 'themeChange';
+
+/**
+ * ThemeToggle
+ *
+ * A React component that provides theme switching functionality between light and dark modes.
+ *
+ * Multiple instances of this component can be used in the same window/tab. They will sync the theme state across each other.
+ *
+ * Note: Requires darkMode: "class" to be set in Tailwind config:
+ * ```ts
+ * export default {
+ *   // ...
+ *   darkMode: "class",
+ * }
+ * ```
+ */
 export default function ThemeToggle() {
   const [theme, setTheme] = useState('light')
 
   useEffect(() => {
-    // Check localStorage and system preferences
+    // Initial theme setup
     const storedTheme = localStorage.getItem('theme')
     if (storedTheme) {
       setTheme(storedTheme)
@@ -15,6 +33,29 @@ export default function ThemeToggle() {
       setTheme('dark')
       document.documentElement.className = 'dark'
     }
+
+    // Listen for theme changes from other instances in the same window
+    const handleThemeChange = (e: CustomEvent) => {
+      const newTheme = e.detail;
+      setTheme(newTheme)
+      document.documentElement.className = newTheme
+    }
+
+    // Listen for theme changes from other windows/tabs
+    const handleStorageChange = (e: StorageEvent) => {
+      if (e.key === 'theme' && e.newValue) {
+        setTheme(e.newValue)
+        document.documentElement.className = e.newValue
+      }
+    }
+
+    window.addEventListener(THEME_CHANGE_EVENT, handleThemeChange as EventListener)
+    window.addEventListener('storage', handleStorageChange)
+
+    return () => {
+      window.removeEventListener(THEME_CHANGE_EVENT, handleThemeChange as EventListener)
+      window.removeEventListener('storage', handleStorageChange)
+    }
   }, [])
 
   const toggleTheme = () => {
@@ -22,6 +63,9 @@ export default function ThemeToggle() {
     setTheme(newTheme)
     document.documentElement.className = newTheme
     localStorage.setItem('theme', newTheme)
+
+    // Dispatch custom event for other instances in the same window
+    window.dispatchEvent(new CustomEvent(THEME_CHANGE_EVENT, { detail: newTheme }))
   }
 
   return (
