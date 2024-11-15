@@ -19,11 +19,10 @@ export default function CodeBlock({ code, language = "tsx", className = "" }: Co
   };
 
   return (
-    <div className={`relative rounded-lg overflow-hidden ${className}`}>
+    <div className={`relative rounded-lg overflow-hidden border border-gray-700/50 shadow-lg shadow-gray-900/20 ${className}`}>
       <button
         onClick={handleCopy}
-        className="absolute right-2 top-2 px-2 py-1 rounded text-xs font-medium 
-          bg-gray-700/50 hover:bg-gray-700/70 text-white transition-colors"
+        className="absolute right-2 top-2 px-2 py-1 rounded text-xs font-medium bg-gray-700/70 hover:bg-gray-600/90 text-white transition-colors"
         aria-label="Copy code"
       >
         {copied ? (
@@ -65,7 +64,10 @@ export default function CodeBlock({ code, language = "tsx", className = "" }: Co
       >
         {({ style, tokens, getLineProps, getTokenProps }) => (
           <pre
-            style={style}
+            style={{
+              ...style,
+              backgroundColor: 'rgb(1 31 51)',
+            }}
             className="p-4 overflow-x-auto text-sm"
           >
             {tokens.map((line, i) => (
