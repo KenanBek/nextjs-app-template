@@ -15,3 +15,4 @@ Generic components must be standalone and not use any project or other generic c
 - [CodeBlock](./CodeBlock.tsx): code block with copy button.
 - [FloatingNav](./FloatingNav.tsx): floating navigation.
 - [TableOfContents](./TableOfContents.tsx): table of contents.
+- [ScrollIndicator](./ScrollIndicator.tsx): progress bar showing scroll position.

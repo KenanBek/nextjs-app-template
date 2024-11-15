@@ -20,8 +20,7 @@ Components are the building blocks of Next.js App Template. They are designed to
 - `CodeBlock`: code block with copy button.
 - `FloatingNav`: floating navigation.
 - `TableOfContents`: table of contents.
-- `ScrollToTopButton`: scroll to top button.
-- `ScrollIndicator`: scroll indicator.
+- `ScrollIndicator`: progress bar showing scroll position.
 
 Learn more about [generic components](./components/generic/README.md).
 
