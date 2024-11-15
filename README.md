@@ -63,9 +63,15 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Learn More about Next.js
+## Learn more about Next.js
 
-To learn more about Next.js, take a look at the following resources:
+If you are a beginner, you can use one of my courses to start building with Next.js, Tailwind CSS, and TypeScript:
 
+- [Next.js, Tailwind CSS, and TypeScript](https://www.udemy.com/course/nextjs-tailwind-css-typescript/)
+
+Additionally, take a look at the following resources to learn more about Next.js:
+
+- [TypeScript Programming Language](https://www.typescriptlang.org/docs/) - learn about TypeScript.
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Tailwind CSS](https://tailwindcss.com/docs/installation) - learn about Tailwind CSS.
