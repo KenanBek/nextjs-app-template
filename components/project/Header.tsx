@@ -40,10 +40,10 @@ export default function Header({ links = appConfig.navigation.links }: HeaderPro
           {/* Theme toggle and mobile menu button */}
           <div className="flex items-center space-x-4">
             <div className="hidden sm:block">
-              <CTAButton href="https://github.com/KenanBek/nextjs-app-template">Get Started</CTAButton>
+              <ThemeToggle />
             </div>
             <div className="hidden sm:block">
-              <ThemeToggle />
+              <CTAButton href="https://github.com/KenanBek/nextjs-app-template">Get Started</CTAButton>
             </div>
             {/* Mobile menu button */}
             <div className="sm:hidden ml-2">

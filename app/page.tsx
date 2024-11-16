@@ -19,7 +19,7 @@ export default function HomePage() {
               </CTAButton>
               <CTAButton
                 href="/components"
-                className="bg-white text-indigo-600 hover:bg-gray-50 dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700"
+                variant="secondary"
               >
                 View Components
               </CTAButton>
