@@ -6,7 +6,7 @@ export interface AppConfig {
     text: string;
     href: string;
   };
-  navigation: {
+  header: {
     links: Array<{
       href: string;
       label: string;

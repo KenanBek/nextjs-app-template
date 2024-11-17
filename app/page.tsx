@@ -21,7 +21,7 @@ export default function HomePage() {
                 href="/components"
                 variant="secondary"
               >
-                View Components
+                Explore Components
               </CTAButton>
             </div>
           </PageHeader>

@@ -7,10 +7,10 @@ import appConfig from "@/config/app.config";
 import CTAButton from "@/components/generic/CTAButton";
 
 interface HeaderProps {
-  links?: typeof appConfig.navigation.links;
+  links?: typeof appConfig.header.links;
 }
 
-export default function Header({ links = appConfig.navigation.links }: HeaderProps) {
+export default function Header({ links = appConfig.header.links }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (

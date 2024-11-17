@@ -5,16 +5,19 @@ import TableOfContents from "@/components/generic/TableOfContents";
 import ScrollIndicator from "@/components/generic/ScrollIndicator";
 import { COMPONENT_DATA, ComponentData } from "./components.data";
 
-// Now define TOC_ITEMS after COMPONENT_DATA
 const TOC_ITEMS = {
-  'Generic Components': Object.entries(COMPONENT_DATA.genericComponents).map(([id, data]) => ({
-    id,
-    label: data.title
-  })),
-  'Project Components': Object.entries(COMPONENT_DATA.projectComponents).map(([id, data]) => ({
-    id,
-    label: data.title
-  }))
+  "Generic Components": Object.entries(COMPONENT_DATA.genericComponents).map(
+    ([id, data]) => ({
+      id,
+      label: data.title,
+    })
+  ),
+  "Project Components": Object.entries(COMPONENT_DATA.projectComponents).map(
+    ([id, data]) => ({
+      id,
+      label: data.title,
+    })
+  ),
 };
 
 function ComponentSection({ id, data }: { id: string; data: ComponentData }) {
