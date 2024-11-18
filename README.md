@@ -22,14 +22,12 @@ Components are the building blocks of Next.js App Template. They are designed to
 - `TableOfContents`: table of contents.
 - `ScrollIndicator`: progress bar showing scroll position.
 
-Learn more about [generic components](./components/generic/README.md).
-
 #### Project
 
 - `Header`: header area with navigation.
 - `Footer`: footer area with links and social media.
 
-Learn more about [project components](./components/project/README.md).
+Learn more about [components](https://github.com/KenanBek/nextjs-app-template/wiki#components).
 
 ## Getting Started
 
