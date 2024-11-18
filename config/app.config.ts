@@ -31,8 +31,8 @@ const appConfig: AppConfig = {
           label: "Issues",
         },
         {
-          href: "https://github.com/KenanBek/nextjs-app-template/discussions",
-          label: "Discussions",
+          href: "https://github.com/KenanBek/nextjs-app-template/wiki",
+          label: "Documentation",
         },
       ],
       documentation: [
