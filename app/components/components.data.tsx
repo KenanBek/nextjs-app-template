@@ -5,7 +5,6 @@ import TableOfContents from "@/components/generic/TableOfContents";
 import Header from "@/components/project/Header";
 import Footer from "@/components/project/Footer";
 
-// Export the type definition
 export type ComponentData = {
   title: string;
   description: string | null;
@@ -20,6 +19,7 @@ type ComponentDataStructure = {
 
 export const COMPONENT_DATA: ComponentDataStructure = {
   genericComponents: {
+    // PageHeader
     pageheader: {
       title: 'PageHeader',
       description: 'The PageHeader component is used to display a page header with a title, subtitle, and description.',
@@ -60,12 +60,14 @@ export const COMPONENT_DATA: ComponentDataStructure = {
   Custom Style
 </CTAButton>`,
     },
+    // ThemeToggle
     themetoggle: {
       title: 'ThemeToggle',
       description: null,
       demo: <ThemeToggle />,
       code: '<ThemeToggle />',
     },
+    // FloatingNav
     floatingnav: {
       title: 'FloatingNav',
       description: 'The FloatingNav component appears when scrolling down the page. See it in action by scrolling this page.',
@@ -80,6 +82,7 @@ export const COMPONENT_DATA: ComponentDataStructure = {
   ]
 }} />`,
     },
+    // TableOfContents
     tableofcontents: {
       title: 'TableOfContents',
       description: null,
@@ -100,6 +103,7 @@ export const COMPONENT_DATA: ComponentDataStructure = {
   ]
 }} />`,
     },
+    // ScrollIndicator
     scrollindicator: {
       title: 'ScrollIndicator',
       description: 'The ScrollIndicator component shows reading progress at the top of the page. See it in action as you scroll this page.',
@@ -108,12 +112,14 @@ export const COMPONENT_DATA: ComponentDataStructure = {
     },
   },
   projectComponents: {
+    // Header
     header: {
       title: 'Header',
       description: 'The Header component is used to display a header with a logo, navigation links, theme toggle, and a CTA button.',
       demo: <Header />,
       code: '<Header />',
     },
+    // Footer
     footer: {
       title: 'Footer',
       description: 'The Footer component is used to display a footer with a company name and navigation links.',
