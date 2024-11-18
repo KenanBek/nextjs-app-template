@@ -4,6 +4,7 @@ import ThemeToggle from "@/components/generic/ThemeToggle";
 import TableOfContents from "@/components/generic/TableOfContents";
 import Header from "@/components/project/Header";
 import Footer from "@/components/project/Footer";
+import InfoBox from "@/components/generic/InfoBox";
 
 export type ComponentData = {
   title: string;
@@ -109,6 +110,21 @@ export const COMPONENT_DATA: ComponentDataStructure = {
       description: 'The ScrollIndicator component shows reading progress at the top of the page. See it in action as you scroll this page.',
       demo: null,
       code: '<ScrollIndicator />',
+    },
+    // InfoBox
+    infobox: {
+      title: 'InfoBox',
+      description: 'The InfoBox component is used to display content in a styled container with consistent padding and background.',
+      demo: (
+        <InfoBox>
+          <p>This is an example of content inside an InfoBox component.</p>
+          <p className="mt-4">It can contain multiple paragraphs and other elements.</p>
+        </InfoBox>
+      ),
+      code: `<InfoBox>
+  <p>This is an example of content inside an InfoBox component.</p>
+  <p className="mt-4">It can contain multiple paragraphs and other elements.</p>
+</InfoBox>`,
     },
   },
   projectComponents: {
