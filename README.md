@@ -13,13 +13,13 @@ Learn more about [components](https://github.com/KenanBek/nextjs-app-template/wi
 #### Generic
 
 - [PageHeader](https://github.com/KenanBek/nextjs-app-template/wiki/PageHeader): title and subtitle for a page.
+- [TableOfContents](https://github.com/KenanBek/nextjs-app-template/wiki/TableOfContents): table of contents.
+- [InfoBox](https://github.com/KenanBek/nextjs-app-template/wiki/InfoBox): box with centered text information.
 - [CTAButton](https://github.com/KenanBek/nextjs-app-template/wiki/CTAButton): call-to-action button.
 - [ThemeToggle](https://github.com/KenanBek/nextjs-app-template/wiki/ThemeToggle): theme toggle button.
 - [CodeBlock](https://github.com/KenanBek/nextjs-app-template/wiki/CodeBlock): code block with copy button.
 - [FloatingNav](https://github.com/KenanBek/nextjs-app-template/wiki/FloatingNav): floating navigation.
-- [TableOfContents](https://github.com/KenanBek/nextjs-app-template/wiki/TableOfContents): table of contents.
 - [ScrollIndicator](https://github.com/KenanBek/nextjs-app-template/wiki/ScrollIndicator): progress bar showing scroll position.
-- [InfoBox](https://github.com/KenanBek/nextjs-app-template/wiki/InfoBox): box with centered text information.
 
 #### Project
 
