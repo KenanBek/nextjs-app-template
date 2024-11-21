@@ -32,7 +32,7 @@ const appConfig: AppConfig = {
         },
         {
           href: "https://github.com/KenanBek/nextjs-app-template/wiki",
-          label: "Documentation",
+          label: "Wiki",
         },
       ],
       documentation: [
