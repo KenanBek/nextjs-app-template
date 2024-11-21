@@ -6,28 +6,25 @@ Next.js app template and boilerplate for SaaS, portfolio, landing page, and mark
 
 Components are the building blocks of Next.js App Template. They are designed to be used in a variety of projects. All components are split into **generic** and **project** components.
 
-- [Generic](./components/generic/README.md): independent components that can be used in any project and in other project components.
-- [Project](./components/project/README.md): components that use data from [project's configuration](./config/README.md).
+Learn more about [components](https://github.com/KenanBek/nextjs-app-template/wiki#components).
 
 ### List of Components
 
 #### Generic
 
-- `InfoBox`: box with centered text information.
-- `PageHeader`: title and subtitle for a page.
-- `CTAButton`: call-to-action button.
-- `ThemeToggle`: theme toggle button.
-- `CodeBlock`: code block with copy button.
-- `FloatingNav`: floating navigation.
-- `TableOfContents`: table of contents.
-- `ScrollIndicator`: progress bar showing scroll position.
+- [PageHeader](https://github.com/KenanBek/nextjs-app-template/wiki/PageHeader): title and subtitle for a page.
+- [CTAButton](https://github.com/KenanBek/nextjs-app-template/wiki/CTAButton): call-to-action button.
+- [ThemeToggle](https://github.com/KenanBek/nextjs-app-template/wiki/ThemeToggle): theme toggle button.
+- [CodeBlock](https://github.com/KenanBek/nextjs-app-template/wiki/CodeBlock): code block with copy button.
+- [FloatingNav](https://github.com/KenanBek/nextjs-app-template/wiki/FloatingNav): floating navigation.
+- [TableOfContents](https://github.com/KenanBek/nextjs-app-template/wiki/TableOfContents): table of contents.
+- [ScrollIndicator](https://github.com/KenanBek/nextjs-app-template/wiki/ScrollIndicator): progress bar showing scroll position.
+- [InfoBox](https://github.com/KenanBek/nextjs-app-template/wiki/InfoBox): box with centered text information.
 
 #### Project
 
-- `Header`: header area with navigation.
-- `Footer`: footer area with links and social media.
-
-Learn more about [components](https://github.com/KenanBek/nextjs-app-template/wiki#components).
+- [Header](https://github.com/KenanBek/nextjs-app-template/wiki/Header): header area with navigation.
+- [Footer](https://github.com/KenanBek/nextjs-app-template/wiki/Footer): footer area with links and social media.
 
 ## Getting Started
 
