@@ -70,6 +70,10 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+## Features
+
+- [Vercel Analytics](https://vercel.com/analytics) - for tracking page views and other metrics.
+
 ## Learn more about Next.js
 
 If you are a beginner, you can use one of my courses to start building with Next.js, Tailwind CSS, and TypeScript:
