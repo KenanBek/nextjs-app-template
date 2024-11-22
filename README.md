@@ -2,9 +2,17 @@
 
 Next.js app template and boilerplate for SaaS, portfolio, landing page, and marketing websites.
 
+It is ready to use template for your project with following features:
+
+- Built-in components for various use cases (header, footer, CTA button, table of contents, etc.)
+- Customizable using configuration and reusable components (reuse for different projects)
+- Based on Tailwind CSS and TypeScript
+
+Learn more about using [Wiki documentation page](https://github.com/KenanBek/nextjs-app-template/wiki).
+
 ## Components
 
-Components are the building blocks of Next.js App Template. They are designed to be used in a variety of projects. All components are split into **generic** and **project** components.
+Components are the building blocks of **Next.js App Template**. They are designed to be used in a variety of projects. All components are split into **generic** and **project** components.
 
 Learn more about [components](https://github.com/KenanBek/nextjs-app-template/wiki#components).
 
@@ -40,7 +48,7 @@ You can also clone with another name:
 git clone https://github.com/KenanBek/nextjs-app-template.git my-project
 ```
 
-Then, install the dependencies:
+Switch to the project directory and install the dependencies:
 
 ```bash
 npm install
